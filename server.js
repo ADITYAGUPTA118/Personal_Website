@@ -2,10 +2,10 @@ const express=require('express');
 const app=express();
 
 app.get('/',function(req,res){
-     res.sendFile(__dirname + '/home.html');
+     res.sendFile(__dirname + '/index.html');
 });
-app.get('/home.html',function(req,res){
-    res.sendFile(__dirname + '/home.html');
+app.get('/index.html',function(req,res){
+    res.sendFile(__dirname + '/index.html');
 });
 app.get('/achievements.html',function(req,res){
     res.sendFile(__dirname + '/achievements.html');
